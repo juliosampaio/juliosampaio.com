@@ -1,0 +1,10 @@
+{
+  "name": "@juliosampaio/ts-config",
+  "description": "A collection of TypeScript configurations, based on my personal preferences.",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Julio Sampaio",
+  "exports": {
+    "./next": "./bundler/next.json"
+  }
+}

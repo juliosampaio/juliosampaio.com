@@ -27,6 +27,9 @@ importers:
         specifier: 19.0.0-rc-66855b96-20241106
         version: 19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106)
     devDependencies:
+      '@juliosampaio/ts-config':
+        specifier: workspace:*
+        version: link:../../packages/ts-config
       '@types/node':
         specifier: ^20
         version: 20.17.6
@@ -39,6 +42,8 @@ importers:
       typescript:
         specifier: ^5
         version: 5.5.4
+
+  packages/ts-config: {}
 
 packages:
 
