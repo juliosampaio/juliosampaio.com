@@ -1,4 +1,4 @@
-import type { CMSClient } from "../cms-client";
+import type { CMSClient } from "src/client/cms-client";
 
 export class NotionClient implements CMSClient {
   getPage(pageName: string): Promise<string> {

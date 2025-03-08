@@ -6,7 +6,10 @@
         "declaration": true,
         "declarationMap": true,
         "rootDir": "./src",
-        "noEmit": false
+        "noEmit": false,
+        "paths": {
+            "src/*": ["src/*"]
+        }
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "dist"]
