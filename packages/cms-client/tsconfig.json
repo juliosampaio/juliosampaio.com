@@ -1,0 +1,13 @@
+{
+    "extends": "@juliosampaio/ts-config/bundler/node",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./dist",
+        "declaration": true,
+        "declarationMap": true,
+        "rootDir": "./src",
+        "noEmit": false
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}

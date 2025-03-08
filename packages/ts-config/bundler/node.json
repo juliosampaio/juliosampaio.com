@@ -1,0 +1,12 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "target": "es2022",
+    "moduleDetection": "force",
+    "strict": true,
+    "module": "ESNext"
+  },
+  "include": [],
+  "exclude": ["node_modules"]
+}

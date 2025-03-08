@@ -17,6 +17,9 @@ importers:
 
   apps/site:
     dependencies:
+      '@juliosampaio/cms-client':
+        specifier: workspace:*
+        version: link:../../packages/cms-client
       next:
         specifier: 15.0.3
         version: 15.0.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
@@ -39,6 +42,18 @@ importers:
       '@types/react-dom':
         specifier: ^18
         version: 18.3.1
+      typescript:
+        specifier: ^5
+        version: 5.5.4
+
+  packages/cms-client:
+    devDependencies:
+      '@juliosampaio/ts-config':
+        specifier: workspace:*
+        version: link:../ts-config
+      '@types/node':
+        specifier: ^20
+        version: 20.17.6
       typescript:
         specifier: ^5
         version: 5.5.4

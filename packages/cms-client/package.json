@@ -1,0 +1,29 @@
+{
+  "name": "@juliosampaio/cms-client",
+  "type": "module",
+  "description": "A CMS client to manage the content of juliosampaio.com",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Julio Sampaio",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "@juliosampaio/ts-config": "workspace:*",
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}
