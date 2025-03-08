@@ -1,0 +1,16 @@
+{
+  "name": "@juliosampaio/tailwind-config",
+  "description": "Tailwind CSS Config Tailored for juliosampaio.com",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Julio Sampaio",
+  "exports": {},
+  "devDependencies": {
+    "@juliosampaio/ts-config": "workspace:*",
+    "tailwindcss": "^4.0.12",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4.0.12"
+  }
+}

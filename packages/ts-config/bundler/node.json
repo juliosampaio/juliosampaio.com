@@ -5,7 +5,16 @@
     "target": "es2022",
     "moduleDetection": "force",
     "strict": true,
-    "module": "ESNext"
+    "module": "ESNext",
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "rootDir": "./src",
+    "noEmit": false,
+    "paths": {
+        "src/*": ["src/*"]
+    }
   },
   "include": [],
   "exclude": ["node_modules"]
