@@ -6,6 +6,7 @@
   "author": "Julio Sampaio",
   "exports": {
     "./next": "./bundler/next.json",
-    "./bundler/node": "./bundler/node.json"
+    "./bundler/node": "./bundler/node.json",
+    "./bundler/base": "./bundler/base.json"
   }
 }

@@ -1,0 +1,8 @@
+@theme {
+  --color-*: initial;
+
+  --color-primary: #1f2a44;
+  --color-secondary: #3a506b;
+  --color-accent: #f8f9fa;
+  --color-support: #e5e5e5;
+}

@@ -4,11 +4,18 @@
   "version": "0.0.0",
   "private": true,
   "author": "Julio Sampaio",
-  "exports": {},
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp src/caesar.theme.css dist/caesar.theme.css"
+  },
+  "exports": {
+    "./theme/caesar": "./dist/caesar.theme.css",
+    "./theme/caesar.css": "./dist/caesar.theme.css"
+  },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
-    "@juliosampaio/ts-config": "workspace:*",
-    "tailwindcss": "^4.0.12",
-    "typescript": "^5"
+    "tailwindcss": "^4.0.12"
   },
   "peerDependencies": {
     "tailwindcss": "^4.0.12"
