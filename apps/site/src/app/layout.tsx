@@ -1,8 +1,15 @@
 import "./globals.css";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} font-sans`}>
       <body className="h-screen w-screen bg-support text-primary">
         <header className="border-b-2 border-primary flex pr-5 pl-5">
           <ul className="flex gap-4 items-end">

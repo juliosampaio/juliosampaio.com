@@ -1,4 +1,7 @@
 @theme {
+  /* ---------------------
+   * COLORS
+   * --------------------- */
   --color-*: initial;
 
   --color-primary: #0a30bc;
@@ -52,4 +55,9 @@
   --color-support-800: "#745138";
   --color-support-900: "#5e4430";
   --color-support-950: "#322218";
+
+  /* ---------------------
+   * FONTS
+   * --------------------- */
+  --font-sans: var(--font-inter);
 }
