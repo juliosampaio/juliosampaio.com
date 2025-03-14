@@ -1,16 +1,37 @@
 {
   "name": "@juliosampaio/eslint-config",
+  "description": "ESLint Config Tailored for juliosampaio.com",
   "version": "0.0.0",
   "private": true,
+  "author": "Julio Sampaio",
+  "scripts": {
+    "lint": "eslint",
+    "build": "tsc"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/default.d.ts",
+      "import": "./dist/default.js"
+    }
+  },
   "files": [
-    "library.js",
-    "react.js",
-    "storybook.js"
+    "dist"
   ],
   "devDependencies": {
-    "eslint-config-turbo": "^2.0.0",
-    "eslint-plugin-mdx": "^3.1.5",
-    "eslint-plugin-only-warn": "^1.1.0",
-    "eslint-plugin-storybook": "^0.8.0"
+    "@eslint/js": "^9.22.0",
+    "@juliosampaio/ts-config": "workspace:*",
+    "@types/eslint": "^9.6.1",
+    "eslint": "^9.22.0",
+    "eslint-plugin-no-relative-import-paths": "^1.6.1",
+    "globals": "^16.0.0",
+    "jiti": "^2.4.2",
+    "typescript": "^5",
+    "typescript-eslint": "^8.26.1"
+  },
+  "peerDependencies": {
+    "eslint": "^9.22.0",
+    "eslint-plugin-no-relative-import-paths": "^1.6.1",
+    "typescript-eslint": "^8.26.1",
+    "@eslint/js": "^9.22.0"
   }
 }
