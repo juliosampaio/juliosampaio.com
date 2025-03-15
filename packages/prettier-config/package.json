@@ -1,0 +1,23 @@
+{
+  "name": "@juliosampaio/prettier-config",
+  "description": "Prettier Config Tailored for juliosampaio.com",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Julio Sampaio",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp src/base.cjs dist/base.cjs"
+  },
+  "exports": {
+    "./base": "./dist/base.cjs"
+  },
+  "devDependencies": {
+    "@juliosampaio/ts-config": "workspace:*",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "prettier": "^3.5.3"
+  }
+}
