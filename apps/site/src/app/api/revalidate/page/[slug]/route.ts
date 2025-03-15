@@ -1,9 +1,9 @@
-import { API_VERSION, createClient } from "@juliosampaio/cms-client";
+import { API_VERSION, createClient } from '@juliosampaio/cms-client'
 
 export async function POST(request: Request) {
-  const client = createClient();
+  const client = createClient()
 
-  console.log({ API_VERSION });
+  console.log({ API_VERSION })
 
-  return new Response(await client.getPage("pageName"));
+  return new Response(await client.getPage('pageName'))
 }
