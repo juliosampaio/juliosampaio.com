@@ -1,6 +1,7 @@
 import { type Linter } from "eslint";
 import noRelativeImportPaths from "eslint-plugin-no-relative-import-paths";
 import eslint from "@eslint/js";
+import eslintPluginPrettier from "eslint-plugin-prettier/recommended";
 import tseslint from "typescript-eslint";
 
 export const noRelativeImports: Linter.Config<Linter.RulesRecord> = {
@@ -16,4 +17,14 @@ export const filesConfig: Linter.Config<Linter.RulesRecord> = {
   ignores: [".next/**", ".turbo/**", "dist/**", "node_modules/**"],
 };
 
-export default tseslint.config(eslint.configs.recommended, tseslint.configs.recommended, noRelativeImports, filesConfig);
+const eslintPluginPrettierConfig: Linter.Config<Linter.RulesRecord> = {
+  ...eslintPluginPrettier,
+};
+
+export default tseslint.config(
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
+  noRelativeImports,
+  filesConfig,
+  eslintPluginPrettierConfig,
+);

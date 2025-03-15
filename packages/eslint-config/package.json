@@ -20,18 +20,21 @@
   "devDependencies": {
     "@eslint/js": "^9.22.0",
     "@juliosampaio/ts-config": "workspace:*",
+    "@juliosampaio/prettier-config": "workspace:*",
     "@types/eslint": "^9.6.1",
     "eslint": "^9.22.0",
     "eslint-plugin-no-relative-import-paths": "^1.6.1",
+    "eslint-plugin-prettier": "^5.2.3",
     "globals": "^16.0.0",
     "jiti": "^2.4.2",
     "typescript": "^5",
     "typescript-eslint": "^8.26.1"
   },
   "peerDependencies": {
+    "@eslint/js": "^9.22.0",
     "eslint": "^9.22.0",
     "eslint-plugin-no-relative-import-paths": "^1.6.1",
-    "typescript-eslint": "^8.26.1",
-    "@eslint/js": "^9.22.0"
+    "eslint-plugin-prettier": "^5.2.3",
+    "typescript-eslint": "^8.26.1"
   }
 }
