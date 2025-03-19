@@ -3,11 +3,20 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev"
+    "dev": "turbo dev",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "turbo": "^2.2.3",
     "typescript": "5.5.4"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "pnpm exec eslint --fix",
+      "pnpm exec prettier --write"
+    ]
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
