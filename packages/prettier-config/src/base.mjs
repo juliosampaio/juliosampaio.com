@@ -1,19 +1,21 @@
+import importPlugin from '@trivago/prettier-plugin-sort-imports';
+
 /**
  * @see https://prettier.io/docs/configuration
  * @type {import("prettier").Config}
  */
 const config = {
-  trailingComma: "es5",
+  trailingComma: 'es5',
   tabWidth: 2,
-  semi: false,
+  semi: true,
   singleQuote: true,
-  importOrder: ["<THIRD_PARTY_MODULES>", "[./]"],
+  importOrder: ['<THIRD_PARTY_MODULES>', '[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
-  plugins: [require.resolve("@trivago/prettier-plugin-sort-imports")],
+  plugins: [importPlugin],
   overrides: [
     {
-      files: "*.yaml",
+      files: '*.yaml',
       options: {
         tabWidth: 2,
         singleQuote: false,
@@ -22,4 +24,4 @@ const config = {
   ],
 };
 
-module.exports = config;
+export default config;

@@ -1,1 +1,3 @@
-export default require("./src/base");
+import config from './src/base.mjs';
+
+export default config;

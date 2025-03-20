@@ -1,3 +1,3 @@
-import baseConfig from '@juliosampaio/prettier-config/base'
+import baseConfig from '@juliosampaio/prettier-config/base';
 
-export default baseConfig
+export default baseConfig;
