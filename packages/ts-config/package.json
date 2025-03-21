@@ -7,6 +7,7 @@
   "exports": {
     "./next": "./bundler/next.json",
     "./bundler/node": "./bundler/node.json",
-    "./bundler/base": "./bundler/base.json"
+    "./bundler/base": "./bundler/base.json",
+    "./bundler/react": "./bundler/react.json"
   }
 }

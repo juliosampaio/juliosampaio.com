@@ -1,0 +1,33 @@
+{
+  "name": "storybook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@juliosampaio/eslint-config": "workspace:*",
+    "@juliosampaio/prettier-config": "workspace:*",
+    "@juliosampaio/ts-config": "workspace:*",
+    "@chromatic-com/storybook": "^3",
+    "@storybook/addon-essentials": "^8.6.7",
+    "@storybook/addon-onboarding": "^8.6.7",
+    "@storybook/blocks": "^8.6.7",
+    "@storybook/react": "^8.6.7",
+    "@storybook/react-vite": "^8.6.7",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "storybook": "^8.6.7",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  }
+}
