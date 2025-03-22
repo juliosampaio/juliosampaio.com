@@ -1,0 +1,9 @@
+{
+  "extends": "@juliosampaio/ts-config/bundler/react-library",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "./src",
+  },
+  "include": ["src/**/*", "../../apps/storybook/src/stories/button.stories.tsx"],
+  "exclude": ["node_modules", "dist", "build"]
+}

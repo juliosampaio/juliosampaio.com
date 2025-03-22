@@ -17,6 +17,7 @@
     "@juliosampaio/eslint-config": "workspace:*",
     "@juliosampaio/prettier-config": "workspace:*",
     "@juliosampaio/ts-config": "workspace:*",
+    "@juliosampaio/vidi-button": "workspace:*",
     "@chromatic-com/storybook": "^3",
     "@storybook/addon-essentials": "^8.6.7",
     "@storybook/addon-onboarding": "^8.6.7",

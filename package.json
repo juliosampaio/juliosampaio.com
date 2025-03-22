@@ -4,7 +4,8 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "prepare": "husky"
+    "prepare": "husky",
+    "dev:ui:packages": "turbo run dev --filter=storybook --filter='./packages/vidi-*'"
   },
   "devDependencies": {
     "husky": "^9.1.7",
