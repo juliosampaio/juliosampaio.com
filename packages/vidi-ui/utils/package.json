@@ -1,0 +1,35 @@
+{
+  "name": "@juliosampaio/vidi-utils",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "private": true,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "clean": "rm -rf .turbo node_modules dist"
+  },
+  "exports": {
+    "./tailwind": {
+      "types": "./dist/tailwind/index.d.ts",
+      "import": "./dist/tailwind/index.mjs",
+      "require": "./dist/tailwind/index.js"
+    }
+  },
+  "devDependencies": {
+    "@juliosampaio/eslint-config": "workspace:*",
+    "@juliosampaio/prettier-config": "workspace:*",
+    "@juliosampaio/ts-config": "workspace:*",
+    "clsx": "^2.1.1",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "react": "^19.0.0",
+    "tailwind-merge": "^3.0.2",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.2"
+  }
+}
