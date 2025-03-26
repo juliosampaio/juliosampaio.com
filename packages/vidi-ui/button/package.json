@@ -5,27 +5,37 @@
   "private": true,
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch",
+    "dev": "concurrently \"tsup --watch\" \"pnpm run dev:css\"",
     "lint": "eslint . --max-warnings 0",
     "format": "prettier --write .",
-    "clean": "rm -rf .turbo node_modules dist"
+    "clean": "rm -rf .turbo node_modules dist",
+    "build:css": "tailwindcss -i ./src/button.css -o ./dist/button.css",
+    "dev:css": "tailwindcss -i ./src/button.css -o ./dist/button.css --watch"
   },
   "exports": {
     ".": {
       "types": "./src/button.tsx",
       "import": "./dist/button.mjs",
       "require": "./dist/button.js"
+    },
+    "./button.css": {
+      "import": "./dist/button.css",
+      "require": "./dist/button.css"
     }
   },
   "devDependencies": {
     "@juliosampaio/eslint-config": "workspace:*",
     "@juliosampaio/prettier-config": "workspace:*",
+    "@juliosampaio/tailwind-config": "workspace:*",
     "@juliosampaio/ts-config": "workspace:*",
     "@juliosampaio/vidi-utils": "workspace:*",
+    "@tailwindcss/cli": "^4.0.15",
+    "concurrently": "^9.1.2",
     "eslint": "^9.22.0",
     "prettier": "^3.5.3",
     "react": "^19.0.0",
     "storybook": "^8.6.7",
+    "tailwindcss": "^4.0.12",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2"
   },

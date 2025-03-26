@@ -5,26 +5,26 @@ import { cn } from '@juliosampaio/vidi-utils/tailwind';
 import { Slot } from '@radix-ui/react-slot';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
+  'vd:inline-flex vd:items-center vd:justify-center vd:gap-2 vd:whitespace-nowrap vd:rounded-md vd:text-sm vd:font-medium vd:transition-colors vd:focus-visible:outline-none vd:focus-visible:ring-1 vd:focus-visible:ring-ring vd:disabled:pointer-events-none vd:disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
   {
     variants: {
       variant: {
         default:
-          'bg-primary text-primary-foreground shadow hover:bg-primary/90',
+          'vd:bg-primary vd:text-primary-foreground vd:shadow vd:hover:bg-primary/90',
         destructive:
-          'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
+          'vd:bg-destructive vd:text-destructive-foreground vd:shadow-sm vd:hover:bg-destructive/90',
         outline:
-          'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
+          'vd:border vd:border-input vd:bg-background vd:shadow-sm vd:hover:bg-accent vd:hover:text-accent-foreground',
         secondary:
-          'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
-        ghost: 'hover:bg-accent hover:text-accent-foreground',
-        link: 'text-primary underline-offset-4 hover:underline',
+          'vd:bg-secondary vd:text-secondary-foreground vd:shadow-sm vd:hover:bg-secondary/80',
+        ghost: 'vd:hover:bg-accent vd:hover:text-accent-foreground',
+        link: 'vd:text-primary vd:underline-offset-4 vd:hover:underline',
       },
       size: {
-        default: 'h-9 px-4 py-2',
-        sm: 'h-8 rounded-md px-3 text-xs',
-        lg: 'h-10 rounded-md px-8',
-        icon: 'h-9 w-9',
+        default: 'vd:h-9 vd:px-4 vd:py-2',
+        sm: 'vd:h-8 vd:rounded-md vd:px-3 vd:text-xs',
+        lg: 'vd:h-10 vd:rounded-md vd:px-8',
+        icon: 'vd:h-9 vd:w-9',
       },
     },
     defaultVariants: {
