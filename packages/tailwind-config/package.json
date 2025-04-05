@@ -5,7 +5,8 @@
   "private": true,
   "author": "Julio Sampaio",
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && cp src/caesar.theme.css dist/caesar.theme.css"
+    "build": "rm -rf dist && mkdir dist && cp src/caesar.theme.css dist/caesar.theme.css",
+    "dev": "nodemon --watch src/caesar.theme.css --exec \"pnpm run build\""
   },
   "exports": {
     "./theme/caesar": "./dist/caesar.theme.css",
@@ -15,6 +16,7 @@
     "dist"
   ],
   "devDependencies": {
+    "nodemon": "^3.1.9",
     "tailwindcss": "^4.0.12"
   },
   "peerDependencies": {

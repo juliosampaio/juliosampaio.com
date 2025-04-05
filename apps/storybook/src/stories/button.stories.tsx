@@ -15,3 +15,21 @@ export const Primary: Story = {
     variant: 'default',
   },
 };
+
+export const PrimarySmall: Story = {
+  args: {
+    title: 'Button',
+    children: 'Click me 2',
+    variant: 'default',
+    size: 'sm',
+  },
+};
+
+export const PrimaryLarge: Story = {
+  args: {
+    title: 'Button',
+    children: 'Click me 2',
+    variant: 'default',
+    size: 'lg',
+  },
+};

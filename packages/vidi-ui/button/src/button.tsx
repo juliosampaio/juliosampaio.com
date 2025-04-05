@@ -5,31 +5,22 @@ import { cn } from '@juliosampaio/vidi-utils/tailwind';
 import { Slot } from '@radix-ui/react-slot';
 
 const buttonVariants = cva(
-  'vd:inline-flex vd:items-center vd:justify-center vd:gap-2 vd:whitespace-nowrap vd:rounded-md vd:text-sm vd:font-medium vd:transition-colors vd:focus-visible:outline-none vd:focus-visible:ring-1 vd:focus-visible:ring-ring vd:disabled:pointer-events-none vd:disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
+  'vd:border-2 vd:pt-md vd:pb-md vd:pr-lg vd:pl-lg vd:border-primary vd:rounded-md vd:typography-semibold-sm vd:text-text-white',
   {
     variants: {
       variant: {
-        default:
-          'vd:bg-primary vd:text-primary-foreground vd:shadow vd:hover:bg-primary/90',
-        destructive:
-          'vd:bg-destructive vd:text-destructive-foreground vd:shadow-sm vd:hover:bg-destructive/90',
-        outline:
-          'vd:border vd:border-input vd:bg-background vd:shadow-sm vd:hover:bg-accent vd:hover:text-accent-foreground',
-        secondary:
-          'vd:bg-secondary vd:text-secondary-foreground vd:shadow-sm vd:hover:bg-secondary/80',
-        ghost: 'vd:hover:bg-accent vd:hover:text-accent-foreground',
-        link: 'vd:text-primary vd:underline-offset-4 vd:hover:underline',
+        default: 'vd:bg-brand-solid vd:hover:bg-brand-solid_hover',
       },
       size: {
-        default: 'vd:h-9 vd:px-4 vd:py-2',
-        sm: 'vd:h-8 vd:rounded-md vd:px-3 vd:text-xs',
-        lg: 'vd:h-10 vd:rounded-md vd:px-8',
-        icon: 'vd:h-9 vd:w-9',
+        sm: 'vd:h-[36px]',
+        md: 'vd:h-[40px]',
+        lg: 'vd:h-[44px]',
+        xl: 'vd:h-[48px]',
       },
     },
     defaultVariants: {
       variant: 'default',
-      size: 'default',
+      size: 'md',
     },
   }
 );

@@ -11,60 +11,78 @@
    * --------------------- */
   --color-*: initial;
 
-  --color-primary: #0a30bc;
-  --color-primary-50: "#e8f5ff";
-  --color-primary-100: "#d6ecff";
-  --color-primary-200: "#b5dbff";
-  --color-primary-300: "#89c1ff";
-  --color-primary-400: "#5a9aff";
-  --color-primary-500: "#3571ff";
-  --color-primary-600: "#1244ff";
-  --color-primary-700: "#0939f9";
-  --color-primary-800: "#0a30bc";
-  --color-primary-900: "#13349c";
-  --color-primary-950: "#0b1c5b";
+  --color-brand-solid: #0a30bc;
+  --color-brand-solid_hover: #0b1c5b;
 
-  --color-secondary: #3a506b;
-  --color-secondary-50: "#f5f7fa";
-  --color-secondary-100: "#eaeef4";
-  --color-secondary-200: "#d1dbe6";
-  --color-secondary-300: "#a9bbd0";
-  --color-secondary-400: "#7a97b6";
-  --color-secondary-500: "#5a7b9d";
-  --color-secondary-600: "#466283";
-  --color-secondary-700: "#3a506b";
-  --color-secondary-800: "#334559";
-  --color-secondary-900: "#2e3b4c";
-  --color-secondary-950: "#1e2733";
-
-  --color-accent: #f8f9fa;
-  --color-accent-50: "#f8f9fa";
-  --color-accent-100: "#eceff2";
-  --color-accent-200: "#d6dce1";
-  --color-accent-300: "#b2bec7";
-  --color-accent-400: "#889ba8";
-  --color-accent-500: "#697e8e";
-  --color-accent-600: "#546775";
-  --color-accent-700: "#45535f";
-  --color-accent-800: "#3c4750";
-  --color-accent-900: "#353d45";
-  --color-accent-950: "#23292e";
-
-  --color-support: #f8f5ed;
-  --color-support-50: "#f8f5ed";
-  --color-support-100: "#f3eee1";
-  --color-support-200: "#e6dbc2";
-  --color-support-300: "#d7c39a";
-  --color-support-400: "#c6a671";
-  --color-support-500: "#b98f56";
-  --color-support-600: "#ac7d4a";
-  --color-support-700: "#8f643f";
-  --color-support-800: "#745138";
-  --color-support-900: "#5e4430";
-  --color-support-950: "#322218";
+  /* text colors */
+  --color-text-white: #e8f5ff;
 
   /* ---------------------
    * FONTS
    * --------------------- */
   --font-sans: var(--font-inter);
+
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+
+  /* ---------------------
+   * SPACING
+   * --------------------- */
+  --spacing-*: initial;
+  --spacing-none: 0rem;
+  --spacing-xxs: 0.125rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.375rem;
+  --spacing-md: 0.5rem;
+  --spacing-lg: 0.75rem;
+  --spacing-xl: 1rem;
+  --spacing-2xl: 1.25rem;
+  --spacing-3xl: 1.5rem;
+  --spacing-4xl: 2rem;
+  --spacing-5xl: 2.5rem;
+  --spacing-6xl: 3rem;
+  --spacing-7xl: 4rem;
+  --spacing-8xl: 5rem;
+  --spacing-9xl: 6rem;
+  --spacing-10xl: 8rem;
+  --spacing-11xl: 10rem;
+  /* ---------------------
+   * RADIUS
+   * --------------------- */
+  --radius-*: initial;
+  --radius-none: 0rem;
+  --radius-xxs: 0.125rem;
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.25rem;
+  --radius-4xl: 1.5rem;
+  --radius-full: 9999px;
+}
+
+@utility typography-regular-* {
+  font-size: --value(--text- *);
+  line-height: --value(--text- * --line-height);
+  font-weight: 400;
+}
+
+@utility typography-medium-* {
+  font-size: --value(--text- *);
+  line-height: --value(--text- * --line-height);
+  font-weight: 500;
+}
+
+@utility typography-semibold-* {
+  font-size: --value(--text- *);
+  line-height: --value(--text- * --line-height);
+  font-weight: 600;
+}
+
+@utility typography-bold-* {
+  font-size: --value(--text- *);
+  line-height: --value(--text- * --line-height);
+  font-weight: 700;
 }

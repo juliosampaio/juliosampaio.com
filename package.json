@@ -5,7 +5,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "prepare": "husky",
-    "dev:ui:packages": "turbo run dev --filter=storybook --filter='./packages/vidi-ui/*'"
+    "dev:ui:packages": "turbo run dev --filter=storybook --filter='./packages/vidi-ui/*' --filter=@juliosampaio/tailwind-config"
   },
   "devDependencies": {
     "husky": "^9.1.7",

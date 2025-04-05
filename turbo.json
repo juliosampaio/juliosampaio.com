@@ -11,8 +11,7 @@
     "lint": {},
     "dev": {
       "cache": false,
-      "persistent": true,
-      "dependsOn": ["@juliosampaio/tailwind-config#build"]
+      "persistent": true
     }
   }
 }

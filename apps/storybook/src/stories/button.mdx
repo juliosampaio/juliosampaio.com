@@ -1,4 +1,5 @@
 import { Canvas, Meta } from '@storybook/blocks';
+import { Button } from '@juliosampaio/vidi-button';
 
 import * as ButtonStories from './button.stories';
 
@@ -8,5 +9,9 @@ import * as ButtonStories from './button.stories';
 
 A button is a clickable element that can be used to trigger actions.
 
-
-<Canvas of={ButtonStories.Primary} />
+<div style={{ display: 'flex', gap: '1rem' }}>
+  <Button size="sm">Click me</Button>
+  <Button size="md">Click me</Button>
+  <Button size="lg">Click me</Button>
+  <Button size="xl">Click me</Button>
+</div>
