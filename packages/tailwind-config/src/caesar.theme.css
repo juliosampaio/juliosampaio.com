@@ -63,26 +63,13 @@
   --radius-full: 9999px;
 }
 
-@utility typography-regular-* {
-  font-size: --value(--text- *);
-  line-height: --value(--text- * --line-height);
-  font-weight: 400;
-}
+/* ---------------------
+ * UTILITIES
+ * --------------------- */
 
-@utility typography-medium-* {
-  font-size: --value(--text- *);
-  line-height: --value(--text- * --line-height);
-  font-weight: 500;
-}
-
-@utility typography-semibold-* {
-  font-size: --value(--text- *);
-  line-height: --value(--text- * --line-height);
-  font-weight: 600;
-}
-
-@utility typography-bold-* {
-  font-size: --value(--text- *);
-  line-height: --value(--text- * --line-height);
-  font-weight: 700;
+/* typography utilities */
+@utility text-sm-* {
+  font-size: --theme(--text-sm);
+  line-height: --theme(--text-sm--line-height);
+  font-weight: --value(--font-weight- *);
 }

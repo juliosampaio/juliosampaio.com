@@ -5,11 +5,12 @@ import { cn } from '@juliosampaio/vidi-utils/tailwind';
 import { Slot } from '@radix-ui/react-slot';
 
 const buttonVariants = cva(
-  'vd:border-2 vd:pt-md vd:pb-md vd:pr-lg vd:pl-lg vd:border-primary vd:rounded-md vd:typography-semibold-sm vd:text-text-white',
+  'vd:border-2 vd:pt-md vd:pb-md vd:pr-lg vd:pl-lg vd:border-primary vd:rounded-sm vd:text-text-white',
   {
     variants: {
       variant: {
-        default: 'vd:bg-brand-solid vd:hover:bg-brand-solid_hover',
+        primary:
+          'vd:flex vd:items-center vd:bg-brand-solid vd:hover:bg-brand-solid_hover vd:text-sm-semibold',
       },
       size: {
         sm: 'vd:h-[36px]',
@@ -19,7 +20,7 @@ const buttonVariants = cva(
       },
     },
     defaultVariants: {
-      variant: 'default',
+      variant: 'primary',
       size: 'md',
     },
   }
